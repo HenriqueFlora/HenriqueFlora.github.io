@@ -1,0 +1,269 @@
+html, body {
+    margin: 0;
+    padding: 0;   
+}
+.navigation {
+    background-color: #3a474d;
+    color: #E6E8E6;
+    height: 50px;
+    animation-name: navegacao;
+    animation-duration: 5s;
+}
+.navigation a{
+    text-decoration: none;
+    color: #E6E8E6;
+}
+.navigation a:hover{
+    color: aqua;
+}
+.navigation ul{
+    margin-top: 0;
+    list-style: none;
+    padding-left: 0;
+    text-align: right;
+}
+.navigation li{
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    font-size: 16px;
+    font-family:"Courier New", monospace;
+}
+.navigation li.threeline-icon{
+    display: none;
+
+}
+.navigation li.threeline-icon:hover{
+    color:aqua;
+    cursor:pointer;
+}
+body{
+    background-color: #313638;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.capa{
+    color:#E6E8E6;   
+}
+.capa span{
+    color:aqua;
+    display: block;
+}
+.capa div{
+    display: inline-block;
+    height: 650px;
+}
+.profile-pic{
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-capa;
+    animation-duration: 5s;
+}
+.profile-pic img{
+    width: 350px;
+    border-radius: 150px;
+    margin-top: 200px;
+}
+.profile-title{
+    vertical-align: top;
+    width: 59%;
+    
+    animation-name: titulo-capa;
+    animation-duration: 5s;
+}
+.profile-title h1{
+    font-size: 51px;
+    margin-top: 300px;
+    line-height: 51px;
+    text-transform: uppercase;
+}
+.profile-title h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: -30px;
+}
+.main{
+    padding: 80px 180px 80px 100px;
+    animation-name: conteudo;
+    animation-duration: 5s;
+}
+.cv-pic{
+    float: left;
+    width: 290px;
+    margin-right: 30px;
+}
+.main h1{
+    color:#E6E8E6;   
+    font-weight: normal;
+}
+.main h2{
+    color:#cdd1d3;
+    font-size: 20px;
+    font-weight: normal;
+}
+.main h3{  
+    color:aqua;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.main p{
+    font-size:16px;
+    font-weight: 100;
+    color: white;
+    line-height: 18px;
+    text-align: justify;
+}
+.caminho{
+    list-style: none;
+    padding-left: 0;
+    color: #E6E8E6;
+}
+.caminho a{
+    color: grey;
+}
+.caminho li{
+    display: inline-block;
+}
+.social-img{
+    width: 50px;
+    margin-right:5px;
+}
+.miniatura {
+    width:320px;
+    height:320px;
+    display: inline-block;
+    background-size: contain;
+    margin-right: 25px;
+    overflow: hidden;
+}
+
+.blackbox{
+    width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+    padding-top: 120px;
+	transition: 1s;
+}
+
+.blackbox:hover {
+    opacity: 0.9;
+	transition: 1s;
+}
+.blackbox-text{
+    text-align: center;
+}
+.blackbox-text h1{
+    font-size: 16px;
+    color: aqua;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.blackbox-text h2{
+    text-transform: none;
+    font-weight: 100;    
+    margin-top: 0;
+}
+.miniatura a{
+    text-decoration: none;
+}
+.foto-trabalhos{
+    width: 100%;
+    text-align: center;
+}
+.main h4{
+    font-size: 20px;
+    color: #E6E8E6;
+}
+@keyframes profile-capa {
+    0%{opacity: 0; transform: translate(0px,20px)}
+    100%{opacity: 1; transform: translate(0px,0px)}
+}
+@keyframes titulo-capa {
+    0%{opacity: 0; transform: translate(0px,-20px)}
+    100%{opacity: 1; transform: translate(0px,0px)}
+}
+@keyframes conteudo {
+    0%{opacity: 0; transform: translate(-20px,0px)}
+    100%{opacity: 1;transform: translate(0px,0px)}
+}
+@keyframes navegacao {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@media(max-width: 1300px){
+    .navigation li {
+        display: none;
+    }
+    .navigation li.threeline-icon {
+        display: inline-block;
+    }
+    .capa div{
+        display: block;
+        height: auto;
+    }
+    .profile-pic{
+        width: 100%;
+    }
+    .profile-pic img{
+        margin-top:20px;
+        max-width: 80%;
+    }
+    .profile-title{
+        text-align: center;
+        width: 100%;
+    }
+    .profile-title h1{
+        margin-top:30px;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .profile-title h2{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main{
+        padding: 20px 5% 40px 5%;
+    }
+    .main p{
+        text-align: left;
+        line-height: 30px;
+    }
+    .caminho li{
+        font-size:15px;
+    }
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+    }
+    .miniatura{
+        max-width: 100%;
+        margin-top: 20px;
+        background-size: auto 100%;
+    }
+    .blackbox{
+        opacity:0.9;
+    }
+    .menujs{
+        height: auto;
+    }
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .menujs li{
+        display: block;
+        border-bottom: solid grey 1px;
+        width: 100%;
+        padding: 0;
+    }
+}
